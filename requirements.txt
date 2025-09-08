@@ -1,0 +1,9 @@
+torch==1.12.1+cu113
+numpy
+pandas
+geopandas
+matplotlib
+scikit-learn
+scipy
+tqdm
+rasterio
