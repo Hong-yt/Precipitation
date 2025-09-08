@@ -1,1 +1,31 @@
-# Precipitation
+# The code for manuscript: Predicting precipitation satellite sensor accuracy in ungauged areas using explainable machine learning.
+
+##1. Environments setting
+
+We recommend using a GPU environment and please first confirm that the cuda version is 11.3. Then, please Install the required dependencies “requirements.txt”
+
+## 2. Introduction to the codes files
+
+1. The folder './TC_EIVD/':
+
+The file contains codes for three precipitation data accuracy assessment methods: In-situ verification, multiplicative triple collocation(MTC) and extended double instrumental variable algorithm（EIVD）
+  a. 'mtc.py', 'mtc_rainfall_classification.py' are the code files used to perform  MTC analysis. Rainfall_classification represents classification based on rainfall levels.
+  b. 'eivd.py','eivd_rainfall_classification.py' are the code files used to perform  EIVD analysis. Rainfall_classification represents classification based on rainfall levels.
+  c.'station_statistics_point.py', 'station_statistics_grid.py', 'station_rainfall_classification.py' are the code files used to perform  in-situ verification analysis. Grid represents grid-based analysis, and point represents point-based analysis.Rainfall_classification represents classification based on rainfall levels.
+  d. The code starting with "climate" represents the accuracy analysis results of each method under different climates.The code at the beginning of "landuse" represents the accuracy analysis results of each method under different land use types.
+
+2. The folder './DNN/':
+
+   This folder includes the training and evaluation processes of different models on different datasets.The codes in different datasets are mainly different in parameter settings, and the rest are generally the same. Here we take imerg_f7 as an example.
+
+   - the './DNN/imerg_f7/' folder: 
+  a. 'config.py' is the configuration code, including data set specification, output directory, data processing configuration, SHAP analysis configuration, hyperparameter configuration, data partitioning configuration, training configuration, etc.
+  b. 'dataset.py' is the code for data processing and preprocessing.
+  c. 'evaluator.py' is the code for model evaluation.
+  d. 'main.py' is the code for running the entire program.
+  e.'model.py' is the code for the DNN model.
+  f. 'shap_analyzer.py' is the code for SHAP analysis of the model.
+  g. 'trainer.py' is the code for model training.
+  h. 'visualizer.py' is the code for visualizing the results.
+
+   - the './DNN/some preprocess/' folder: 'pearson.py' is the code for calculating the correlation coefficient between datasets. 'rep.py' is the code for calculating the spatial representation of auxiliary variables. 'world_clip.py' is the code for clipping the world using the continents shp file.
