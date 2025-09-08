@@ -1,6 +1,6 @@
 # The code for manuscript: Predicting precipitation satellite sensor accuracy in ungauged areas using explainable machine learning.
-The Multiplicative Triple Collocation Analysis (MTC) method is a data evaluation technique that estimates the accuracy of three datasets by pairwise comparison of three independent observation samples. 
-The EIVD method only requires two remote sensing datasets with error-related correlations and a tool variable that is strongly correlated with the true value but unrelated to the data errors.
+The multiplicative triple collocation Analysis (MTC) method is a data evaluation technique that estimates the accuracy of three datasets by pairwise comparison of three independent observation samples. 
+The extended double instrumental variable algorithm（EIVD） method only requires two remote sensing datasets with error-related correlations and a tool variable that is strongly correlated with the true value but unrelated to the data errors.
 Explainable machine learning model（DNN） for accuracy prediction of satellite remote sensing precipitation data in ungauged areas.
 
 ## 1. Environments setting
@@ -11,7 +11,7 @@ We recommend using a GPU environment and please first confirm that the cuda vers
 
 1. The folder './TC_EIVD/':
 
-The file contains codes for three precipitation data accuracy assessment methods: In-situ verification, multiplicative triple collocation(MTC) and extended double instrumental variable algorithm（EIVD）
+The file contains codes for three precipitation data accuracy assessment methods: In-situ verification, MTC and EIVD
   a. 'mtc.py', 'mtc_rainfall_classification.py' are the code files used to perform  MTC analysis. Rainfall_classification represents classification based on rainfall levels.
   b. 'eivd.py','eivd_rainfall_classification.py' are the code files used to perform  EIVD analysis. Rainfall_classification represents classification based on rainfall levels.
   c.'station_statistics_point.py', 'station_statistics_grid.py', 'station_rainfall_classification.py' are the code files used to perform  in-situ verification analysis. Grid represents grid-based analysis, and point represents point-based analysis.Rainfall_classification represents classification based on rainfall levels.
