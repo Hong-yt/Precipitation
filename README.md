@@ -19,13 +19,13 @@ The file contains codes for three precipitation data accuracy assessment methods
    This folder includes the training and evaluation processes of different models on different datasets.The codes in different datasets are mainly different in parameter settings, and the rest are generally the same. Here we take imerg_f7 as an example.
 
    - the './DNN/imerg_f7/' folder: 
-  a. 'config.py' is the configuration code, including data set specification, output directory, data processing configuration, SHAP analysis configuration, hyperparameter configuration, data partitioning configuration, training configuration, etc.
-  b. 'dataset.py' is the code for data processing and preprocessing.
-  c. 'evaluator.py' is the code for model evaluation.
-  d. 'main.py' is the code for running the entire program.
-  e.'model.py' is the code for the DNN model.
-  f. 'shap_analyzer.py' is the code for SHAP analysis of the model.
-  g. 'trainer.py' is the code for model training.
-  h. 'visualizer.py' is the code for visualizing the results.
+    - 'config.py' is the configuration code, including data set specification, output directory, data processing configuration, SHAP analysis configuration, hyperparameter configuration, data partitioning configuration, training configuration, etc.
+  'dataset.py' is the code for data processing and preprocessing.
+  'evaluator.py' is the code for model evaluation.
+  'main.py' is the code for running the entire program.
+  'model.py' is the code for the DNN model.
+  'shap_analyzer.py' is the code for SHAP analysis of the model.
+  'trainer.py' is the code for model training.
+  'visualizer.py' is the code for visualizing the results.
 
    - the './DNN/some preprocess/' folder: 'pearson.py' is the code for calculating the correlation coefficient between datasets. 'rep.py' is the code for calculating the spatial representation of auxiliary variables. 'world_clip.py' is the code for clipping the world using the continents shp file.
