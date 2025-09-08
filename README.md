@@ -19,7 +19,7 @@ The file contains codes for three precipitation data accuracy assessment methods
    This folder includes the training and evaluation processes of different models on different datasets.The codes in different datasets are mainly different in parameter settings, and the rest are generally the same. Here we take imerg_f7 as an example.
 
    - the './DNN/imerg_f7/' folder: 
-    - 'config.py' is the configuration code, including data set specification, output directory, data processing configuration, SHAP analysis configuration, hyperparameter configuration, data partitioning configuration, training configuration, etc.
+   'config.py' is the configuration code, including data set specification, output directory, data processing configuration, SHAP analysis configuration, hyperparameter configuration, data partitioning configuration, training configuration, etc.
   'dataset.py' is the code for data processing and preprocessing.
   'evaluator.py' is the code for model evaluation.
   'main.py' is the code for running the entire program.
