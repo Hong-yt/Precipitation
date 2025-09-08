@@ -1,4 +1,4 @@
-# The code for manuscript: Predicting precipitation satellite sensor accuracy in ungauged areas using explainable machine learning.
+# The code for manuscript.
 The multiplicative triple collocation Analysis (MTC) method is a data evaluation technique that estimates the accuracy of three datasets by pairwise comparison of three independent observation samples. 
 The extended double instrumental variable algorithm（EIVD） method only requires two remote sensing datasets with error-related correlations and a tool variable that is strongly correlated with the true value but unrelated to the data errors.
 The explainable machine learning model（DNN） for accuracy prediction of satellite remote sensing precipitation data in ungauged areas.
