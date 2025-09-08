@@ -1,4 +1,7 @@
 # The code for manuscript: Predicting precipitation satellite sensor accuracy in ungauged areas using explainable machine learning.
+The Multiplicative Triple Collocation Analysis (MTC) method is a data evaluation technique that estimates the accuracy of three datasets by pairwise comparison of three independent observation samples. 
+The EIVD method only requires two remote sensing datasets with error-related correlations and a tool variable that is strongly correlated with the true value but unrelated to the data errors.
+Explainable machine learning model（DNN） for accuracy prediction of satellite remote sensing precipitation data in ungauged areas.
 
 ## 1. Environments setting
 
@@ -29,3 +32,13 @@ The file contains codes for three precipitation data accuracy assessment methods
   'visualizer.py' is the code for visualizing the results.
 
    - the './DNN/some preprocess/' folder: 'pearson.py' is the code for calculating the correlation coefficient between datasets. 'rep.py' is the code for calculating the spatial representation of auxiliary variables. 'world_clip.py' is the code for clipping the world using the continents shp file.
+
+## 3. Required Datasets
+1. Remotely sensed precipitation data and site-based precipitation data
+2. Land use and climate data
+3. World continent data
+3. Auxiliary variable data - This experiment uses topography, vegetation, drought index, soil texture, etc. You may consider adding other variables to enrich the experiment.
+
+## 4. Notes
+1. The three assessment methods are independent of each other. The climate and land use type analyses are segmented based on the global analysis.
+2. Note that the SHAP analysis is performed on the auxiliary variables added separately and should not be included in feature engineering.
