@@ -1,6 +1,6 @@
 # The code for manuscript: Predicting precipitation satellite sensor accuracy in ungauged areas using explainable machine learning.
 
-##1. Environments setting
+## 1. Environments setting
 
 We recommend using a GPU environment and please first confirm that the cuda version is 11.3. Then, please Install the required dependencies “requirements.txt”
 
